@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f0e5dee6ba.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:#FFD8BE;
+        margin:40px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    nav{
+        float: left;
+        width: 30%;
+        height:auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-right: 40px;
+        background-color: #FCB9AA ;
+        box-sizing:border-box;
+    }
+    #pic1{
+        width: 90%;
+        box-sizing:content-box
+    }
+    nav div{
+        width: 80%;
+        margin:30px;
+        font-size: 25px;
+        box-sizing: content-box;
+    }
+    main{
+        float: left;
+        width: 60%;
+        height:auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #FCB9AA ;
+        box-sizing:border-box;
+    }
+    main div{
+        width: 80%;
+        margin:30px;
+        font-size: 25px;
+        box-sizing: content-box;
+    }
+    #education{
+        float: left;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 60%;
+        height:auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #FCB9AA ;
+        box-sizing:border-box;
+    }
+    #edudetail{
+        width: 80%;
+        margin:30px;
+        font-size: 25px;
+        box-sizing: content-box;
+    }
+    footer{
+        clear: both;
+        display: table;
+        width:100%;
+        height:120px ;
+        font-size: 25px;
+        background-color: #FFAEA5;
+    }
+    .bighead{
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    .head{
+        font-size: 1.5em;
+        font-weight: bold;
+        color:darkslategrey;
+    }
+    #max{
+        width: 100%;
+        height:30px;
+        margin: 20px 0 20px 0 ;
+        background-color:burlywood;
+        border-radius: 16px;
+    }
+    #actual{
+        height:30px;
+        margin :0;
+        background-color:rgb(54, 138, 54) ;
+        border-radius: 16px;
+    }
+    #percent{
+        padding-top: 3px;
+        text-align: center;
+        color: beige;
+        font-size:;
+    }
+    @media screen and (max-width: 768px){
+        nav{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        main{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        #education{
+            margin-top: 0;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 375px){
+        nav{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        main{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        #education{
+            margin-top: 0;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 320px){
+        nav{
+            width: 100%;
+            margin-bottom: 40px;
+            overflow:auto;
+        }
+        main{
+            width: 100%;
+            margin-bottom: 40px;
+            overflow:auto;
+        }
+        #education{
+            margin-top: 0;
+            width: 100%;
+            overflow:auto;
+        }
+    }
+</style>
+<body>
+    <nav>
+        <div id="pic1">
+            <img id="pic1" src="../Picture/profile_pic.jpg" alt="Toey">
+        </div>
+        <div>
+            <p class="bighead">Nattapon Toey</p>
+            <p><i class="fas fa-birthday-cake fa-lg"></i>  Birth Date : 21/Feb/1994</p>
+            <p><i class="fas fa-home fa-lg"></i>  BKK , Thailand</p>
+            <p><i class="far fa-envelope fa-lg"></i>  1234@ex.com</p>
+            <p><i class="fas fa-mobile-alt fa-lg"></i>  088-888-8888</p>
+            <hr style="width:90%">
+            <p class="bighead">Computer Skill</p>
+            <p><i class="fab fa-html5 fa-lg"></i>  HTML</p>
+            <div id="max">
+                <div id="actual" style="width:90%">
+                    <p id="percent"></p>
+                </div>
+            </div>
+            <p><i class="fab fa-css3-alt fa-lg"></i>  CSS</p>
+            <div id="max">
+                <div id="actual" style="width:80%">
+                    <p id="percent"></p>
+                </div>
+            </div>
+            <p><i class="fab fa-python fa-lg"></i>  Python</p>
+            <div id="max">
+                <div id="actual" style="width:80%">
+                    <p id="percent"></p>
+                </div>
+            </div>
+            <hr style="width:90%">
+            <p class="bighead">Langauge Skill</p>
+            <p>Japanese</p>
+            <div id="max">
+                <div id="actual" style="width:90%">
+                    <p id="percent"></p>
+                </div>
+            </div>
+            <p>English</p>
+            <div id="max">
+                <div id="actual" style="width:70%">
+                    <p id="percent"></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <p class="bighead"">Work Experience</p>
+            <p class="head">Japanese Interpreter & Sales</p>
+            <p><i class="far fa-calendar-alt fa-lg" ></i>  Jan 2020 - Current</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reprehenderit praesentium, culpa voluptatum vitae commodi aliquid architecto vel quod magni fugit beatae repellendus cumque fuga unde hic maxime nulla tempora, alias atque minus at. Repellat enim molestiae magni, eius tempore, eaque provident, quo in nemo cum repudiandae accusantium debitis omnis.</p>
+            <hr style="width:90%">
+            <p class="head">Japanese Interpreter</p>
+            <p><i class="far fa-calendar-alt fa-lg" ></i>  July 2019 - Jan 2020</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reprehenderit praesentium, culpa voluptatum vitae commodi aliquid architecto vel quod magni fugit beatae repellendus cumque fuga unde hic maxime nulla tempora, alias atque minus at. Repellat enim molestiae magni, eius tempore, eaque provident, quo in nemo cum repudiandae accusantium debitis omnis.</p>
+            <hr style="width:90%">
+            <p class="head">Japanese Interpreter</p>
+            <p><i class="far fa-calendar-alt fa-lg" ></i>  Oct 2017 - July 2019</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reprehenderit praesentium, culpa voluptatum vitae commodi aliquid architecto vel quod magni fugit beatae repellendus cumque fuga unde hic maxime nulla tempora, alias atque minus at. Repellat enim molestiae magni, eius tempore, eaque provident, quo in nemo cum repudiandae accusantium debitis omnis.</p>
+        </div>      
+    </main>
+    <div id="education">
+        <div id="edudetail">
+            <p style="font-size: 2em;font-weight: bold">Education</p>
+            <p class="head">W3Schools.com</p>
+            <p><i class="far fa-calendar-alt fa-lg" ></i>  Forever</p>
+            <p>Web Devolpment</p>
+            <hr style="width:90%">
+            <p class="head">Coding the Future</p>
+            <p><i class="far fa-calendar-alt fa-lg" ></i>  Currnt</p>
+            <p>UX/UI & HTML/CSS</p>
+            <hr style="width:90%">
+            <p class="head">Kasetsart University</p>
+            <p><i class="far fa-calendar-alt fa-lg" ></i>  2012-2017</p>
+            <p>Bachelor Degree</p>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p style="text-align: center;">Follow Me</p>
+            <div style="text-align: center;">
+                <i class="fab fa-facebook-square fa-lg"></i>
+                <i class="fab fa-instagram fa-lg"></i>
+                <i class="fab fa-line fa-lg"></i>
+                <i class="fab fa-pinterest-square fa-lg"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
